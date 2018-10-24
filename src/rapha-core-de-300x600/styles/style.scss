@@ -1,0 +1,86 @@
+@import 'base/banner';
+@import 'base/preloader';
+$bgColor: #ffffff;
+$ctaColor: #0b9d98;
+$txtBg: rgba(11, 157, 152, 0.576);
+$txtColor: #ffffff;
+$ctaHover: #c92727;
+* {
+    font-size: 100%;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    background-color: #252525;
+    border: solid 1px #252525;
+    box-sizing: border-box;
+}
+
+#video {
+    width: 102%;
+    height: 102%;
+    z-index: -1;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 20%, rgba(255, 255, 255, 0) 100%);
+    z-index: 998;
+}
+
+#logocont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 8px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; //change to column to display vertically
+    #logo {
+        height: 35px;
+        top: 50%;
+        max-height: 75%;
+        margin: 3px;
+    }
+    #explore {
+        margin: 3px;
+        height: 35px;
+    }
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#cta {
+    position: absolute;
+    width: 45%;
+    left: 31%;
+    height: auto;
+    bottom: 10%;
+    z-index: 999;
+}
+
+.copy {
+    bottom: 20px;
+    position: absolute;
+    height: 13%;
+    left: 15px;
+    z-index: 99999;
+}
