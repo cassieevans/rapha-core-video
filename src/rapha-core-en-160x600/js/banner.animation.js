@@ -118,7 +118,7 @@ Banner.prototype.animate = function () {
             if (loops === maxLoops) {
                 this.timeline.pause();
 
-                setTimeout(function () { video.pause(); }, 1800);
+                setTimeout(function () { video.pause(); }, 1000);
 
             }
             loops++;

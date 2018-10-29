@@ -5,10 +5,6 @@ $ctaColor: #0b9d98;
 $txtBg: rgba(11, 157, 152, 0.576);
 $txtColor: #ffffff;
 $ctaHover: #c92727;
-* {
-    font-size: 100%;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-}
 
 .banner {
     visibility: hidden;
@@ -38,57 +34,9 @@ $ctaHover: #c92727;
     z-index: 998;
 }
 
-#logocont {
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; //change to column to display vertically
-    #logo {
-        height: 40px;
-        top: 50%;
-        max-height: 75%;
-        margin: 3px;
-    }
-    #explore {
-        margin: 3px;
-        height: 34px;
-        width: auto;
-    }
-}
-
-.img {
+.svgs {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-}
-
-#cta {
-    position: absolute;
-    width: 15%;
-    right: 20px;
-    height: auto;
-    bottom: 44%;
-    z-index: 999;
-}
-
-.copyPosition {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.copy {
-    position: absolute;
-    height: 20%;
-    top: 40%;
-    left: 20px;
     z-index: 99999;
 }
